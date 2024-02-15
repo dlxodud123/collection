@@ -11,7 +11,7 @@ public class Quiz01 {
 		String remove, modify;
 		Scanner sc = new Scanner(System.in);
 		HashMap<String, Integer> map = new HashMap<>();
-		
+
 		while (true) {
 			System.out.print("1.메뉴 등록\n2.메뉴별 가격 보기\n3.종 료\n>>> ");
 			func = sc.nextInt();
@@ -42,7 +42,7 @@ public class Quiz01 {
 						}else {
 							System.out.println("해당 메뉴가 없습니다");
 						}
-						
+
 					}else if (choice == 2) {
 						System.out.println("삭제할 메뉴를 선택해주세요");
 						remove = sc.next();
@@ -52,16 +52,16 @@ public class Quiz01 {
 						}else {
 							System.out.println("해당 메뉴가 없습니다");
 						}
-						
+
 					}else if (choice == 3) {
 						System.out.println("나가기 선택");
 						break;
-						
+
 					}else {
 						System.out.println("1 ~ 3번으로 다시 선택해주세요");
 					}
 				}
-				
+
 			}else if (func == 3) {
 				System.out.println("종료되었습니다.");
 				break;
